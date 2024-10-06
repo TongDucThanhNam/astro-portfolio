@@ -1,16 +1,25 @@
 ---
-
+import PageLayout from '@layouts/PageLayout.astro';
+import SectionLayout from '@layouts/SectionLayout.astro';
+import Hero from '@components/Hero.tsx';
+import Skills from '@components/Skills.tsx';
+import Projects from '@components/Projects.tsx';
+import * as emoji from 'node-emoji';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageLayout title="Portfolio" subtitle="Nam's portfolio">
+	<Hero client:load />
+	<SectionLayout
+		title="Skills"
+		subtitle={`This is my skills ${emoji.emojify(':hammer_and_pick:')}`}
+	>
+
+		<Skills client:visible />
+	</SectionLayout>
+	<SectionLayout
+		title="Projects"
+		subtitle={`This is projects which i have done ${emoji.emojify(':airplane:')}`}
+	>
+		<Projects client:visible />
+	</SectionLayout>
+</PageLayout>

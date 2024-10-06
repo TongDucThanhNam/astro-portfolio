@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  web:
+    image: tongducthanhnam/portfolio:1.0
+    ports:
+      - "80:80"
+    volumes:
+      - ./config:/etc/httpd/conf
+    command: /usr/sbin/httpd -D FOREGROUND
+
+volumes:
+  config:
