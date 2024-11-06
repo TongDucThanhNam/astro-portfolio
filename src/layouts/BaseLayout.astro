@@ -1,0 +1,57 @@
+---
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import '@fontsource-variable/archivo';
+import '@fontsource-variable/fira-code';
+import '@/styles/global.css';
+import {SEO} from 'astro-seo';
+
+interface Props {
+    title: string;
+    subtitle: string;
+}
+
+const {title, subtitle} = Astro.props;
+---
+
+<html lang="vi" class="scroll-smooth box-border">
+<head>
+    <SEO
+            title={title}
+            titleTemplate={`%s - ${subtitle}`}
+            description="I'm Tống Đức Thành Nam, A Software Engineer based in Ho Chi Minh city, Vietnam. I'm passionate about building software that solves real-world problems and helps people."
+            canonical="https://tongducthanhnam.id.vn"
+            charset="utf-8"
+            openGraph={{
+                basic: {
+                    title: 'Thành Nam - Full-Stack Web Developer',
+                    type: 'website',
+                    image: '',
+                    url: 'https://tongducthanhnam.id.vn',
+                },
+                image: {
+                    type: 'image/png',
+                    width: 1200,
+                    height: 630,
+                    alt: 'Terasumi',
+                },
+            }}
+            twitter={{
+                card: 'summary',
+                site: '@tongducthanhnam',
+                creator: '@tongducthanhnam',
+                title: 'Thành Nam - Full-Stack Web Developer',
+                image: 'https://antogno.dev/images/social-preview.png',
+                imageAlt: 'My avatar',
+                description:
+                    "I'm Tống Đức Thành Nam, A Software Engineer based in Ho Chi Minh city, Vietnam. I'm passionate about building software that solves real-world problems and helps people.",
+            }}
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="generator" content={Astro.generator}/>
+</head>
+<body>
+<slot/>
+<script src="@/scripts/themeInitializer.ts"></script>
+</body>
+</html>

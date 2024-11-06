@@ -1,25 +1,56 @@
 ---
-import PageLayout from '@layouts/PageLayout.astro';
-import SectionLayout from '@layouts/SectionLayout.astro';
-import Hero from '@components/Hero.tsx';
-import Skills from '@components/Skills.tsx';
-import Projects from '@components/Projects.tsx';
+import PageLayout from '@/layouts/PageLayout.astro';
+import SectionLayout from '@/layouts/SectionLayout.astro';
+import {Skills} from '../components/Skills/Skills.tsx';
+import Projects from '@/components/Projects.tsx';
 import * as emoji from 'node-emoji';
+import MacbookScrollSection from "@/components/MacbookScroll.tsx"
+import Introduce from "../components/Introduce.astro";
+import Compare from "../components/CompareSection.astro";
+import {TimelineDemo} from "@/components/TimeLind"
+import HeroSection from "../components/HeroSection.astro";
 ---
 
-<PageLayout title="Portfolio" subtitle="Nam's portfolio">
-	<Hero client:load />
-	<SectionLayout
-		title="Skills"
-		subtitle={`This is my skills ${emoji.emojify(':hammer_and_pick:')}`}
-	>
+<PageLayout title="Nam's portfolio" subtitle="Terasumi">
+    <HeroSection/>
 
-		<Skills client:visible />
-	</SectionLayout>
-	<SectionLayout
-		title="Projects"
-		subtitle={`This is projects which i have done ${emoji.emojify(':airplane:')}`}
-	>
-		<Projects client:visible />
-	</SectionLayout>
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <Introduce/>
+
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <MacbookScrollSection client:visible/>
+
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <SectionLayout
+            title="Skills"
+            subtitle={`This is my skills ${emoji.emojify(':hammer_and_pick:')}`}
+    >
+        <Skills client:visible/>
+    </SectionLayout>
+
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <Compare/>
+
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <SectionLayout
+            title="Projects"
+            subtitle={`This is projects which i have done ${emoji.emojify(':airplane:')}`}
+    >
+        <Projects client:visible/>
+    </SectionLayout>
+
+    <!--Spacer-->
+    <div class="h-10"/>
+
+    <TimelineDemo client:visible/>
 </PageLayout>

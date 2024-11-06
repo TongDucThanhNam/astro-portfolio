@@ -1,0 +1,35 @@
+---
+import {Button} from "@nextui-org/button";
+import {introduce} from "../config/site";
+const IntroduceContent = () => introduce.content
+import Eventbadge from "@/components/EventBadge"
+---
+<div class="h-screen flex flex-col md:flex-row">
+    {/* Hero Section */}
+    <div class="w-full md:w-1/2 flex flex-col justify-center items-start space-y-12">
+        <IntroduceContent/>
+
+        <div class="mt-12">
+            <h2 class="text-2xl font-semibold mb-4">Điểm mạnh</h2>
+            <ul class="list-disc list-inside  space-y-2">
+                {introduce.strength.map((item, index) => (
+                        <li>{item}</li>
+                ))}
+            </ul>
+        </div>
+        <div class="space-x-4">
+            <Button color={"primary"} variant={"shadow"}>
+                Hốt liền
+            </Button>
+
+            <Button color={"danger"} variant={"shadow"}>
+                Không hốt
+            </Button>
+        </div>
+    </div>
+
+    {/* 3D Canvas Section */}
+    <div class="w-full md:w-1/2 h-[60vh] md:h-auto">
+        <Eventbadge client:visible/>
+    </div>
+</div>

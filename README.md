@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/tongducthanhnam/rem-viet">
+  <a href="https://github.com/tongducthanhnam/astro-portfolio">
   <img src="./images/remviet2.webp" alt="Logo" width="80" height="80" />
   </a>
 
@@ -22,16 +22,16 @@
     A Full-stack E-commerce website for selling curtains and blinds. Frontend is built with ReactJS, Backend is built with NodeJS, ExpressJS, MongoDB.
   </p>    
     <br />
-    <a href="https://github.com/TongDucThanhNam/rem-viet">
+    <a href="https://github.com/TongDucThanhNam/astro-portfolio">
       <strong>Explore the docs »</strong>
     </a>
     <br />
     <br />
-    <a href="https://github.com/TongDucThanhNam/rem-viet">View Demo</a>
+    <a href="https://github.com/TongDucThanhNam/astro-portfolio">View Demo</a>
     ·
-    <a href="https://github.com/TongDucThanhNam/rem-viet/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/TongDucThanhNam/astro-portfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/TongDucThanhNam/rem-viet/issues/new?labels=enhancement&template=feature-request---.md">
+    <a href="https://github.com/TongDucThanhNam/astro-portfolio/issues/new?labels=enhancement&template=feature-request---.md">
       Request Feature</a>
     </div>
 </div>
@@ -105,6 +105,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
+
 - NodeJS installed
 - Bun installed (npm. yarn or pnpm are okey)
 - install concurrently:
@@ -114,51 +115,33 @@ Before you begin, ensure you have met the following requirements:
 - MongoDB installed (or use MongoDB Atlas)
 - Docker installed (optional)
 - Telegram bot token (optional)
-- Prepare the environment variables in the `.env` file in the backend, frontend folder or modifier docker-compose.yml file if you using docker.
-
+- Prepare the environment variables in the `.env` file in the backend, frontend folder or modifier docker-compose.yml
+  file if you using docker.
 
 ### Installation
 
 - Clone the repository:
 
 ```
-git clone https://github.com/TongDucThanhNam/rem-viet
+git clone https://github.com/TongDucThanhNam/astro-portfolio
 ```
 
 - Install the frontend:
 
 ```
-cd rem-viet/frontend
 bun i
 ```
 
-- Install the backend:
+- Dockerize the project:
 
 ```
-cd rem-viet/backend
-bun i
+docker build .
 ```
 
-- Run all by concurrently:
+- Run the project:
 
 ```
-bun run dev
-```
-
-- Open your browser and go to `http://localhost:3000` for frontend and `http://localhost:3001` for backend.
-
-- For production (better performance), you can build the frontend and run the backend:
-
-```
-bun run build
-bun run start
-```
-
-- You can also run the backend with Docker:
-
-```
-docker compose build
-docker compose up
+docker run -p 4322:4322
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -172,7 +155,7 @@ docker compose up
 [//]: # (Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.)
 
 _For more examples, please refer to
-the [Documentation](https://github.com/TongDucThanhNam/rem-viet?tab=readme-ov-file)_
+the [Documentation](https://github.com/TongDucThanhNam/astro-portfolio?tab=readme-ov-file)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +164,7 @@ the [Documentation](https://github.com/TongDucThanhNam/rem-viet?tab=readme-ov-fi
 <!-- ROADMAP -->
 
 ## Roadmap
+
 - [x] Basic Frontend and Backend
 - [x] Deploy the project
 - [x] Dashboard for admin
@@ -189,7 +173,7 @@ the [Documentation](https://github.com/TongDucThanhNam/rem-viet?tab=readme-ov-fi
 - [ ] Add more advanced features
 - [ ] Improve the UI/UX and performance
 
-See the [open issues](https://github.com/TongDucThanhNam/rem-viet/issues) for a full list of
+See the [open issues](https://github.com/TongDucThanhNam/astro-portfolio/issues) for a full list of
 proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -217,8 +201,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/TongDucThanhNam/rem-viet/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tongducthanhnam/rem-viet" alt="contrib.rocks image" />
+<a href="https://github.com/TongDucThanhNam/astro-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=tongducthanhnam/astro-portfolio" alt="contrib.rocks image" />
 </a>
 
 
@@ -244,7 +228,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- What I have learn -->
+
 ## What I have learned
+
 - Backend with NodeJS and ExpressJS
     - RESTful API witb ExpressJS: Routing, Middleware
     - MongoDB with Mongoose: CRUD, Model with schema
@@ -259,8 +245,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
     - Frammer Motion: Animation
 - Dockerize the project
 
-
-
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
@@ -273,7 +257,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [Next.js](https://nextjs.org)
 * [Docker](https://docker.com)
 
-
 <p align="right">(<a href="#readme-top">
   back to top
 </a>)</p>
@@ -283,25 +266,25 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/tongducthanhnam/rem-viet.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/tongducthanhnam/astro-portfolio.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/tongducthanhnam/rem-viet/graphs/contributors
+[contributors-url]: https://github.com/tongducthanhnam/astro-portfolio/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/tongducthanhnam/rem-viet.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/tongducthanhnam/astro-portfolio.svg?style=for-the-badge
 
-[forks-url]: https://github.com/tongducthanhnam/rem-viet/network/members
+[forks-url]: https://github.com/tongducthanhnam/astro-portfolio/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/tongducthanhnam/rem-viet.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/tongducthanhnam/astro-portfolio.svg?style=for-the-badge
 
-[stars-url]: https://github.com/tongducthanhnam/rem-viet/stargazers
+[stars-url]: https://github.com/tongducthanhnam/astro-portfolio/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/tongducthanhnam/rem-viet.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/tongducthanhnam/astro-portfolio.svg?style=for-the-badge
 
-[issues-url]: https://github.com/tongducthanhnam/rem-viet/issues
+[issues-url]: https://github.com/tongducthanhnam/astro-portfolio/issues
 
-[license-shield]: https://img.shields.io/github/license/tongducthanhnam/rem-viet.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/tongducthanhnam/astro-portfolio.svg?style=for-the-badge
 
-[license-url]: https://github.com/tongducthanhnam/rem-viet/blob/main/LICENSE
+[license-url]: https://github.com/tongducthanhnam/astro-portfolio/blob/main/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
