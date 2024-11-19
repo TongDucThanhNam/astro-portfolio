@@ -10,9 +10,9 @@ export const webMetaData = {
 export const macbook = {
     content: (
         <span>
-            Hãy tìm hiểu thêm về tớ nhé
+            Sự khác biệt tạo nên những sản phẩm đột phá
         <br/>
-        Love you 🥰
+        Không ngừng sáng tạo, không ngừng học hỏi
         </span>
     ),
     image: "/images/ins.webp"
@@ -30,9 +30,9 @@ export const introduce = {
         </>
     ),
     strength: [
-        "Có tư duy 🤓",
-        "Giàu tình cảm 😘",
-        "Có laptop 💻"
+        "Có kiến thức, kinh nghiệm rộng lớn trong lĩnh vực công nghệ",
+        "Có sự đam mê và tinh thần trách nhiệm cao",
+        "Chịu khó tìm tòi sáng tạo mang lại giá trị cho cộng đồng"
     ],
     gltfModel: "/models/card.glb", // Path: public/models/card.glb -> Read README.md to know how to create this file
     texture: "/models/brand.png" // Path: public/models/brand.png -> Size 1024x248
@@ -118,7 +118,7 @@ export const timelineData = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    Năm 2020, tớ tốt nghiệp cấp 3, và bắt đầu hành trình tìm kiếm kiến thức mới. Tớ đã học được rất
+                    Năm 2020, tôi tốt nghiệp cấp 3, và bắt đầu hành trình tìm kiếm kiến thức mới. Tôi đã học được rất
                     nhiều điều
                     mới mẻ, và có những trải nghiệm thú vị.
                 </p>
@@ -168,12 +168,12 @@ export const timelineData = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    Năm này dịch bệnh Covid bắt đầu lan rộng, có nhiều điều không may mắn xảy ra. Tuy nhưng tớ vẫn cố
-                    gắng
-                    học hỏi và phát triển bản thân.
+                    Năm này dịch bệnh Covid bắt đầu lan rộng, có nhiều điều không may mắn xảy ra. Tuy nhưng tôi vẫn cố
+                    gắng học hỏi và phát triển bản thân.
                 </p>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    Tớ đã có thời gian nhìn nhận về cuộc sống, và nhận ra rằng mình cần phải thay đổi nhiều hơn nữa.
+                    Tớ đã có thời gian nhìn nhận về cuộc sống, và nhận ra rằng mình cần phải thay đổi nhiều hơn nữa. Tôi
+                    muốn tạo ra những sản phẩm công nghệ giúp đỡ cho cộng đồng. Mang lại sự phát triển đột phá.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                     <img
@@ -221,7 +221,8 @@ export const timelineData = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                    Khi dịch bệnh kết thúc, tớ đã có nhiều cơ hội hơn để thực hiện những dự án mà tớ đã lên kế hoạch từ
+                    Khi dịch bệnh kết thúc, tôi đã có nhiều cơ hội hơn để thực hiện những dự án mà tôi đã lên kế hoạch
+                    từ
                     trước.
 
                 </p>
@@ -271,7 +272,8 @@ export const timelineData = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                    Tớ đã có những trải nghiệm thú vị, và đã học được rất nhiều điều mới mẻ. Tớ cảm thấy hạnh phúc vì đã
+                    Tôi đã có những trải nghiệm thú vị, và đã học được rất nhiều điều mới mẻ. Tôi cảm thấy hạnh phúc vì
+                    đã
                     có những người bạn tuyệt vời.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
@@ -302,8 +304,10 @@ export const timelineData = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                    Hiện tại, tớ đang học tập và phát triển bản thân mỗi ngày. Tớ cảm thấy hạnh phúc vì có những người
+                    Hiện tại, Tôi đang học tập và phát triển bản thân mỗi ngày. Tớ cảm thấy hạnh phúc vì có những người
                     bạn tuyệt vời.
+                    Tôi đang chờ đợi những dự án mới, và những trải nghiệm thú vị. Tôi mong rằng mình sẽ tích lũy thêm
+                    thật nhiều kiến thức, kinh nghiệm, trải nghiễm nhiều hơn nữa để phát triển bản thân.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                     <img

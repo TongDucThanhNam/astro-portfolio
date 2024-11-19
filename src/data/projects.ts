@@ -10,6 +10,14 @@ type Project = {
 
 const projects: Project[] = [
     {
+        label: 'Cửa hàng Rèm Việt',
+        repoUrl: "https://luoichongmuoi.shop",
+        description: "Một trang web bán hàng về rèm cửa sổ lưới chống muỗi",
+        stars: 1,
+        highlight: true,
+        tags: ['Astro', 'React', 'MongoDB', "ExpressJS"],
+    },
+    {
         label: 'Seller keyboard',
         repoUrl: 'https://github.com/tongducthanhnam/SellerKeyboard',
         description: "A keyboard custom for seller",

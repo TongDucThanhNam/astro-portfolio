@@ -11,10 +11,10 @@ export default () => {
                         </div>
                         <div className="flex flex-col sm:w-1/2 sm:text-right gap-2">
                             <p className="text-xs w-full text-balance">
-                                Made by <Link href={"https://github.com/antogno/portfolio"}>
-                                antogno
+                                Made by <Link href={"https://github.com/tongducthanhnam"}>
+                                Terasumi
                             </Link> with Astro, React, NextUI & Tailwind CSS in
-                                TypeScript.
+                                TypeScript. With suport from acelity, threeJS, and more.
                             </p>
                         </div>
                     </div>
