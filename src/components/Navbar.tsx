@@ -14,7 +14,7 @@ export default () => {
             classNames={{
                 base: '!backdrop-blur-[1px] bg-opacity-80 rounded-xl border-2 border-black shadow-xl box-border mx-auto w-3/4',
                 content: 'basis-1/5 sm:basis-full gap-3',
-                brand: 'gap-3 max-w-fit',
+                brand: 'gap-3 max-w-screen',
             }}
         >
             <NavbarContent as="div" justify="start">
@@ -26,7 +26,7 @@ export default () => {
                     </NavbarItem>
                 ))}
             </NavbarContent>
-            <NavbarContent as="div" justify="end">
+            <NavbarContent className={"hidden md:flex"} as="div" justify="end">
                 {socials.map((social, index) => (
                     <NavbarItem key={`${social.label}-${index}`}>
                         <Button
