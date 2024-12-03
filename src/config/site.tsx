@@ -34,7 +34,7 @@ export const introduce = {
         "Có sự đam mê và tinh thần trách nhiệm cao",
         "Chịu khó tìm tòi sáng tạo mang lại giá trị cho cộng đồng"
     ],
-    gltfModel: "/models/info_card.glb", // Path: public/models/card.glb -> Read README.md to know how to create this file
+    gltfModel: "/models/terasumi_card.glb", // Path: public/models/card.glb -> Read README.md to know how to create this file
     texture: "/models/brand.png" // Path: public/models/brand.png -> Size 1024x248
 }
 

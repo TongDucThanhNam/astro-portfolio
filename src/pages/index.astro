@@ -22,7 +22,7 @@ import HeroSection from "../components/HeroSection.astro";
     <!--Spacer-->
     <div class="h-10"/>
 
-    <MacbookScrollSection client:visible/>
+    <MacbookScrollSection client:idle/>
 
     <!--Spacer-->
     <div class="h-10"/>
@@ -31,13 +31,13 @@ import HeroSection from "../components/HeroSection.astro";
             title="Skills"
             subtitle={`This is my skills ${emoji.emojify(':hammer_and_pick:')}`}
     >
-        <Skills client:visible/>
+        <Skills client:idle/>
     </SectionLayout>
 
     <!--Spacer-->
     <div class="h-10"/>
 
-    <Compare/>
+    <Compare />
 
     <!--Spacer-->
     <div class="h-10"/>
@@ -52,5 +52,5 @@ import HeroSection from "../components/HeroSection.astro";
     <!--Spacer-->
     <div class="h-10"/>
 
-    <TimelineDemo />
+    <TimelineDemo client:idle />
 </PageLayout>
