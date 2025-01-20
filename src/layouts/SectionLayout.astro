@@ -11,10 +11,12 @@ const { title, subtitle } = Astro.props;
 const id = title.toLowerCase();
 ---
 
+<!-- Section Layout -->
 <section
 	{...{ id }}
 	class="scroll-mt-14 md:scroll-mt-12 mt-8 md:mt-10 lg:mt-12 py-5 transition-opacity ease-in duration-700"
 >
+	<!-- Section Title -->
 	<div>
 		<Link color="primary" href={`#${id}`}>
 			<span
@@ -30,8 +32,12 @@ const id = title.toLowerCase();
 				</p>
 			)
 		}
-	</div>
+		</div>
+	
+	<!-- Spacer -->
 	<Spacer y={10} />
+	
+	<!-- Section Content -->
 	<div>
 		<slot />
 	</div>

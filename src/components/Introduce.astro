@@ -4,7 +4,7 @@ import {introduce} from "../config/site";
 const IntroduceContent = () => introduce.content
 import Eventbadge from "@/components/EventBadge"
 ---
-<div class="h-screen flex flex-col md:flex-row">
+<div class="h-screen flex flex-col md:flex-row mb-20">
     {/* Hero Section */}
     <div class="w-full md:w-1/2 flex flex-col justify-center items-start space-y-12">
         <IntroduceContent/>
@@ -28,8 +28,10 @@ import Eventbadge from "@/components/EventBadge"
         </div>
     </div>
 
+
+
     {/* 3D Canvas Section */}
-    <div class="w-full md:w-1/2 h-[60vh] md:h-auto">
+    <div class="w-full sm:w-3/4 md:w-1/2 min-h-[600px] md:h-auto">
         <Eventbadge client:visible/>
     </div>
 </div>

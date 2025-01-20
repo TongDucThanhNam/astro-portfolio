@@ -12,21 +12,25 @@ import HeroSection from "../components/HeroSection.astro";
 ---
 
 <PageLayout title="Nam's portfolio" subtitle="Terasumi">
+    <!-- Hero Section -->
     <HeroSection/>
 
     <!--Spacer-->
     <div class="h-10"/>
 
+    <!-- Introduce -->
     <Introduce/>
 
     <!--Spacer-->
     <div class="h-10"/>
 
+    <!-- Macbook Scroll Section -->
     <MacbookScrollSection client:idle/>
 
     <!--Spacer-->
     <div class="h-10"/>
 
+    <!-- Skills -->
     <SectionLayout
             title="Skills"
             subtitle={`This is my skills ${emoji.emojify(':hammer_and_pick:')}`}
@@ -42,6 +46,7 @@ import HeroSection from "../components/HeroSection.astro";
     <!--Spacer-->
     <div class="h-10"/>
 
+    <!-- Projects -->
     <SectionLayout
             title="Projects"
             subtitle={`This is projects which i have done ${emoji.emojify(':airplane:')}`}
