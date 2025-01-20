@@ -21,7 +21,7 @@ export const macbook = {
 export const introduce = {
     content: (
         <>
-            <h1 className="text-4xl md:text-5xl  font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                 Giới thiệu bản thân 😇
             </h1>
             <p className="text-xl ">
